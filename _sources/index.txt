@@ -1,0 +1,107 @@
+.. Alyvix documentation master file, created by
+   sphinx-quickstart on Wed Jan 28 11:10:04 2015.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Alyvix's documentation!
+==================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+   
+.. automodule:: alyvix.core.cachemanager
+    :members:
+
+.. autoclass:: CacheManager
+    :members:
+    :inherited-members:
+   
+.. automodule:: alyvix.core.basefinder
+   :members:
+   
+.. autoclass:: BaseFinder
+   :members:
+   :inherited-members:
+   
+   .. automethod:: __init__
+   
+.. automodule:: alyvix.core.rectfinder
+   :members:
+       
+.. autoclass:: RectFinder
+    :members:
+    :inherited-members:
+    
+    .. automethod:: __init__
+   
+.. automodule:: alyvix.core.imagefinder
+   :members:
+   
+.. autoclass:: ImageFinder
+    :members:
+    :inherited-members:
+    
+    .. automethod:: __init__
+    
+.. automodule:: alyvix.core.textfinder
+   :members:
+   
+.. autoclass:: TextFinder
+    :members:
+    :inherited-members:
+    
+    .. automethod:: __init__
+   
+.. automodule:: alyvix.core.objectfinder
+   :members:
+   
+.. autoclass:: ObjectFinder
+   :members:
+   :inherited-members:
+   
+   .. automethod:: __init__
+   
+.. automodule:: alyvix.tools.configreader
+   :members:
+   
+.. autoclass:: ConfigReader
+   :members:
+   :inherited-members:
+   
+.. automodule:: alyvix.tools.logmanager
+   :members:
+   
+.. autoclass:: LogManager
+   :members:
+   :inherited-members:
+
+.. automodule:: alyvix.tools.screenmanager
+   :members:
+   
+.. autoclass:: ScreenManager
+   :members:
+   :inherited-members:
+   
+.. automodule:: alyvix.tools.winmanager
+   :members:
+   
+.. autoclass:: WinManager
+   :members:
+   :inherited-members:
+   
+.. automodule:: alyvix.tools.procmanager
+   :members:
+   
+.. autoclass:: ProcManager
+   :members:
+   :inherited-members:
+   
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

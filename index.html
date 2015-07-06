@@ -1,0 +1,1279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to Alyvix’s documentation! &mdash; Alyvix 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Alyvix 1.0.1 documentation" href="#" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">Alyvix 1.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-alyvix-s-documentation">
+<h1>Welcome to Alyvix&#8217;s documentation!<a class="headerlink" href="#welcome-to-alyvix-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-alyvix.core.cachemanager"></span><dl class="class">
+<dt id="alyvix.core.cachemanager.CacheManager">
+<em class="property">class </em><code class="descclassname">alyvix.core.cachemanager.</code><code class="descname">CacheManager</code><a class="headerlink" href="#alyvix.core.cachemanager.CacheManager" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.core.cachemanager.CacheManager.GetLastObjFoundFullImg">
+<code class="descname">GetLastObjFoundFullImg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.cachemanager.CacheManager.GetLastObjFoundFullImg" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the last image where the object was successfully found.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">numpy.ndarray</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the gray image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.cachemanager.CacheManager.SetLastObjFoundFullImg">
+<code class="descname">SetLastObjFoundFullImg</code><span class="sig-paren">(</span><em>image</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.cachemanager.CacheManager.SetLastObjFoundFullImg" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the last image where the object was successfully found.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<em>numpy.ndarray</em>) &#8211; the gray image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.core.basefinder"></span><dl class="class">
+<dt id="alyvix.core.basefinder.BaseFinder">
+<em class="property">class </em><code class="descclassname">alyvix.core.basefinder.</code><code class="descname">BaseFinder</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.basefinder.BaseFinder" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.core.basefinder.BaseFinder.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.basefinder.BaseFinder.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>init the class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the object name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.basefinder.BaseFinder.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.basefinder.BaseFinder.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.basefinder.BaseFinder.get_result">
+<code class="descname">get_result</code><span class="sig-paren">(</span><em>main_obj_index=0</em>, <em>sub_obj_index=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.basefinder.BaseFinder.get_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list that contains coordinates of template(s) found</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list[(int, int, int, int)]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">x, y, width, height of template(s) found</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.basefinder.BaseFinder.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.basefinder.BaseFinder.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.basefinder.BaseFinder.set_source_image_color">
+<code class="descname">set_source_image_color</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.basefinder.BaseFinder.set_source_image_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the color image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the color image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.basefinder.BaseFinder.set_source_image_gray">
+<code class="descname">set_source_image_gray</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.basefinder.BaseFinder.set_source_image_gray" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the gray image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the gray image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.basefinder.BaseFinder.wait">
+<code class="descname">wait</code><span class="sig-paren">(</span><em>timeout=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.basefinder.BaseFinder.wait" title="Permalink to this definition">¶</a></dt>
+<dd><p>wait until the object appears on the screenmanager.
+if timeout value is -1 (default value) then timeout value will be read from config file.
+if configuration file doesn&#8217;t exist, then timeout value will be 15 sec.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<em>int</em>) &#8211; timeout in seconds</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.core.rectfinder"></span><dl class="class">
+<dt id="alyvix.core.rectfinder.RectFinder">
+<em class="property">class </em><code class="descclassname">alyvix.core.rectfinder.</code><code class="descname">RectFinder</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>init the class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the object name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.add_sub_component">
+<code class="descname">add_sub_component</code><span class="sig-paren">(</span><em>rect_dict</em>, <em>roi_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.add_sub_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a rectangle that the find method has to find if it has also find the main rectangle.
+A ROI (region of interest) will be cropped from the source image according to the roi_dict.
+The find method will search the sub rectangle only inside the roi area.
+roi_x and roi_y are relative to the main rect x,y coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rect_dict</strong> (<em>dict</em>) &#8211; the dictionary that defines the sub rectangle</li>
+<li><strong>roi_dict</strong> (<em>dict</em>) &#8211; the dictionary that defines the ROI</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.find">
+<code class="descname">find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>find the main rectangle and sub rectangles into the source image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list[[MatchResult, list[MatchResult]]]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list that contains x, y, height, width of rectangle(s) found</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.get_result">
+<code class="descname">get_result</code><span class="sig-paren">(</span><em>main_obj_index=0</em>, <em>sub_obj_index=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.get_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list that contains coordinates of template(s) found</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list[(int, int, int, int)]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">x, y, width, height of template(s) found</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.set_main_component">
+<code class="descname">set_main_component</code><span class="sig-paren">(</span><em>rect_dict</em>, <em>roi_dict=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.set_main_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the rectangle that the find method has to find into the source Image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rect_dict</strong> (<em>dict</em>) &#8211; the dictionary that defines the main rectangle</li>
+<li><strong>roi_dict</strong> (<em>dict</em>) &#8211; the dictionary that defines the ROI</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.set_source_image_color">
+<code class="descname">set_source_image_color</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.set_source_image_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the color image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the color image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.set_source_image_gray">
+<code class="descname">set_source_image_gray</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.set_source_image_gray" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the gray image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the gray image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.rectfinder.RectFinder.wait">
+<code class="descname">wait</code><span class="sig-paren">(</span><em>timeout=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.rectfinder.RectFinder.wait" title="Permalink to this definition">¶</a></dt>
+<dd><p>wait until the object appears on the screenmanager.
+if timeout value is -1 (default value) then timeout value will be read from config file.
+if configuration file doesn&#8217;t exist, then timeout value will be 15 sec.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<em>int</em>) &#8211; timeout in seconds</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.core.imagefinder"></span><dl class="class">
+<dt id="alyvix.core.imagefinder.ImageFinder">
+<em class="property">class </em><code class="descclassname">alyvix.core.imagefinder.</code><code class="descname">ImageFinder</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>init the class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the object name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.add_sub_component">
+<code class="descname">add_sub_component</code><span class="sig-paren">(</span><em>template_dict</em>, <em>roi_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.add_sub_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a template that the find method has to find if it has also find the main template.
+A roi (region of interest) will be cropped from the source image according to the parameters
+roi_x, roi_y, roi_width and roi_height. roi_x and roi_y are relative to the main template x,y coordinates.
+The find method will search the sub template only inside the roi area.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>template_image</strong> (<em>numpy.ndarray</em>) &#8211; image of the template</li>
+<li><strong>roi_x</strong> (<em>int</em>) &#8211; x-coordinate of roi</li>
+<li><strong>roi_y</strong> (<em>int</em>) &#8211; y-coordinate of roi</li>
+<li><strong>roi_width</strong> (<em>int</em>) &#8211; roi width</li>
+<li><strong>roi_height</strong> (<em>int</em>) &#8211; roi height</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.find">
+<code class="descname">find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>find the main template and sub templates into the source image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list[(int, int, int, int)]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">x, y, height, width of main template(s)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.get_result">
+<code class="descname">get_result</code><span class="sig-paren">(</span><em>main_obj_index=0</em>, <em>sub_obj_index=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.get_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list that contains coordinates of template(s) found</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list[(int, int, int, int)]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">x, y, width, height of template(s) found</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.set_main_component">
+<code class="descname">set_main_component</code><span class="sig-paren">(</span><em>template_dict</em>, <em>roi_dict=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.set_main_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the template image that the find method has to find into the source Image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>main_template</strong> (<em>numpy.ndarray</em>) &#8211; image of the template</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.set_source_image_color">
+<code class="descname">set_source_image_color</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.set_source_image_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the color image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the color image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.set_source_image_gray">
+<code class="descname">set_source_image_gray</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.set_source_image_gray" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the gray image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the gray image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.imagefinder.ImageFinder.wait">
+<code class="descname">wait</code><span class="sig-paren">(</span><em>timeout=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.imagefinder.ImageFinder.wait" title="Permalink to this definition">¶</a></dt>
+<dd><p>wait until the object appears on the screenmanager.
+if timeout value is -1 (default value) then timeout value will be read from config file.
+if configuration file doesn&#8217;t exist, then timeout value will be 15 sec.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<em>int</em>) &#8211; timeout in seconds</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.core.textfinder"></span><dl class="class">
+<dt id="alyvix.core.textfinder.TextFinder">
+<em class="property">class </em><code class="descclassname">alyvix.core.textfinder.</code><code class="descname">TextFinder</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>init the class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the object name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.add_sub_component">
+<code class="descname">add_sub_component</code><span class="sig-paren">(</span><em>text_dict</em>, <em>roi_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.add_sub_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a text that the find method has to find if it has also find the main text.
+A ROI (region of interest) will be cropped from the source image according to the roi_dict.
+The find method will search the sub rectangle only inside the roi area.
+roi_x and roi_y are relative to the main rect x,y coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>text_dict</strong> (<em>dict</em>) &#8211; the dictionary that defines the sub text</li>
+<li><strong>roi_dict</strong> (<em>dict</em>) &#8211; the dictionary that defines the ROI</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.find">
+<code class="descname">find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>find the main text and sub texts into the source image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list[[MatchResult, list[MatchResult]]]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list that contains x, y, height, width of rectangle(s) found</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.get_result">
+<code class="descname">get_result</code><span class="sig-paren">(</span><em>main_obj_index=0</em>, <em>sub_obj_index=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.get_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list that contains coordinates of template(s) found</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list[(int, int, int, int)]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">x, y, width, height of template(s) found</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.set_main_component">
+<code class="descname">set_main_component</code><span class="sig-paren">(</span><em>text_dict</em>, <em>roi_dict=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.set_main_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the text that the find method has to find into the source Image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>text_dict</strong> (<em>dict</em>) &#8211; the dictionary that defines the main text</li>
+<li><strong>roi_dict</strong> (<em>dict</em>) &#8211; the dictionary that defines the ROI</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.set_source_image_color">
+<code class="descname">set_source_image_color</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.set_source_image_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the color image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the color image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.set_source_image_gray">
+<code class="descname">set_source_image_gray</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.set_source_image_gray" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the gray image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the gray image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.textfinder.TextFinder.wait">
+<code class="descname">wait</code><span class="sig-paren">(</span><em>timeout=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.textfinder.TextFinder.wait" title="Permalink to this definition">¶</a></dt>
+<dd><p>wait until the object appears on the screenmanager.
+if timeout value is -1 (default value) then timeout value will be read from config file.
+if configuration file doesn&#8217;t exist, then timeout value will be 15 sec.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<em>int</em>) &#8211; timeout in seconds</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.core.objectfinder"></span><dl class="class">
+<dt id="alyvix.core.objectfinder.ObjectFinder">
+<em class="property">class </em><code class="descclassname">alyvix.core.objectfinder.</code><code class="descname">ObjectFinder</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>init the class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the object name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.find">
+<code class="descname">find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.find" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>if self._name == &#8220;google_form&#8221;:</dt>
+<dd>print &#8220;start google_form&#8221;</dd>
+<dt>if self._name == &#8220;google_button&#8221;:</dt>
+<dd>print &#8220;start google_button&#8221;</dd>
+<dt>if self._name == &#8220;google_button_2&#8221;:</dt>
+<dd>print &#8220;start google_button_2&#8221;</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.get_result">
+<code class="descname">get_result</code><span class="sig-paren">(</span><em>main_obj_index=0</em>, <em>sub_obj_index=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.get_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list that contains coordinates of template(s) found</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list[(int, int, int, int)]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">x, y, width, height of template(s) found</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.set_main_object">
+<code class="descname">set_main_object</code><span class="sig-paren">(</span><em>main_object</em>, <em>roi_dict=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.set_main_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the template image that the find method has to find into the source Image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>main_template</strong> (<em>numpy.ndarray</em>) &#8211; image of the template</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.set_name">
+<code class="descname">set_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the name of the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the name of the object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.set_source_image_color">
+<code class="descname">set_source_image_color</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.set_source_image_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the color image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the color image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.set_source_image_gray">
+<code class="descname">set_source_image_gray</code><span class="sig-paren">(</span><em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.set_source_image_gray" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the gray image on which the find method will search the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image_data</strong> (<em>numpy.ndarray</em>) &#8211; the gray image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.core.objectfinder.ObjectFinder.wait">
+<code class="descname">wait</code><span class="sig-paren">(</span><em>timeout=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.core.objectfinder.ObjectFinder.wait" title="Permalink to this definition">¶</a></dt>
+<dd><p>wait until the object appears on the screenmanager.
+if timeout value is -1 (default value) then timeout value will be read from config file.
+if configuration file doesn&#8217;t exist, then timeout value will be 15 sec.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> (<em>int</em>) &#8211; timeout in seconds</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.tools.configreader"></span><dl class="class">
+<dt id="alyvix.tools.configreader.ConfigReader">
+<em class="property">class </em><code class="descclassname">alyvix.tools.configreader.</code><code class="descname">ConfigReader</code><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_finder_diff_interval">
+<code class="descname">get_finder_diff_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_finder_diff_interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the interval between calls to the method that look for difference.
+this value indicates the time of each wait loop step.
+default value is 250ms.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">time of a wait loop step</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_finder_thread_interval">
+<code class="descname">get_finder_thread_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_finder_thread_interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the interval between finder threads.
+this value will be used by the wait method of a finder object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">thread interval</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_finder_wait_timeout">
+<code class="descname">get_finder_wait_timeout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_finder_wait_timeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the timeout of the wait method.
+default value is 15 sec.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">timeout value</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_global_config_filename">
+<code class="descname">get_global_config_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_global_config_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the fullname of configuration file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">full filename</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_log_enable_value">
+<code class="descname">get_log_enable_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_log_enable_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the enable value node of log section inside the configuration file.
+default value is True.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">log enabled flag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_log_folder">
+<code class="descname">get_log_folder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_log_folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the log home folder.
+default value is a sub folder (log) inside current directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">log home folder</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_log_hours_per_day">
+<code class="descname">get_log_hours_per_day</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_log_hours_per_day" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the log hours per day retention.
+default value is 24.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">max retention days</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_log_max_retention_days">
+<code class="descname">get_log_max_retention_days</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_log_max_retention_days" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the log max retention days.
+default value is 7.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">max retention days</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_testcase_config_filename">
+<code class="descname">get_testcase_config_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_testcase_config_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the fullname of configuration file inside testcase dir.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">full filename</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.configreader.ConfigReader.get_user_config_filename">
+<code class="descname">get_user_config_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.configreader.ConfigReader.get_user_config_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the fullname of configuration file inside user home dir.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">full filename</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.tools.logmanager"></span><dl class="class">
+<dt id="alyvix.tools.logmanager.LogManager">
+<em class="property">class </em><code class="descclassname">alyvix.tools.logmanager.</code><code class="descname">LogManager</code><a class="headerlink" href="#alyvix.tools.logmanager.LogManager" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.tools.logmanager.LogManager.delete_all_items">
+<code class="descname">delete_all_items</code><span class="sig-paren">(</span><em>sub_dir=None</em>, <em>keep_items=None</em>, <em>exclude_item=None</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.logmanager.LogManager.delete_all_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete old files inside the test case log folder or in its sub directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sub_dir</strong> (<em>string</em>) &#8211; specify a sub folder inside the test case log folder</li>
+<li><strong>keep_items</strong> (<em>int</em>) &#8211; the number of items to keep</li>
+<li><strong>exclude_item</strong> (<em>string</em>) &#8211; exclude a specific folder</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.logmanager.LogManager.is_log_enable">
+<code class="descname">is_log_enable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.logmanager.LogManager.is_log_enable" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if log is enabled.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.logmanager.LogManager.save_image">
+<code class="descname">save_image</code><span class="sig-paren">(</span><em>sub_dir</em>, <em>image_name</em>, <em>image_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.logmanager.LogManager.save_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>save the image into the test case log folder.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sub_dir</strong> (<em>string</em>) &#8211; the subdir to create inside the test case log folder</li>
+<li><strong>image_name</strong> (<em>string</em>) &#8211; the name of the image</li>
+<li><strong>image_data</strong> (<em>numpy.ndarray or Image.Image or cv.iplimage</em>) &#8211; the image data to save</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.logmanager.LogManager.save_info_file">
+<code class="descname">save_info_file</code><span class="sig-paren">(</span><em>sub_dir</em>, <em>file_name</em>, <em>text_data</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.logmanager.LogManager.save_info_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>save a text file into the test case log folder.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sub_dir</strong> (<em>string</em>) &#8211; the subdir to create inside the test case log folder</li>
+<li><strong>file_name</strong> (<em>string</em>) &#8211; the name of the image</li>
+<li><strong>text_data</strong> (<em>string</em>) &#8211; the text to write</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.logmanager.LogManager.set_object_name">
+<code class="descname">set_object_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.logmanager.LogManager.set_object_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the object name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>string</em>) &#8211; the object name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.tools.screenmanager"></span><dl class="class">
+<dt id="alyvix.tools.screenmanager.ScreenManager">
+<em class="property">class </em><code class="descclassname">alyvix.tools.screenmanager.</code><code class="descname">ScreenManager</code><a class="headerlink" href="#alyvix.tools.screenmanager.ScreenManager" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.tools.screenmanager.ScreenManager.grab_desktop">
+<code class="descname">grab_desktop</code><span class="sig-paren">(</span><em>return_type=0</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.screenmanager.ScreenManager.grab_desktop" title="Permalink to this definition">¶</a></dt>
+<dd><p>grab desktop screenshot.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>return_type</strong> (<em>int</em>) &#8211; 0 for pil image, 1 for color matrix, 2 for gray matrix</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">numpy.ndarray or Image.Image</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the screenshot image</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.tools.winmanager"></span><dl class="class">
+<dt id="alyvix.tools.winmanager.WinManager">
+<em class="property">class </em><code class="descclassname">alyvix.tools.winmanager.</code><code class="descname">WinManager</code><a class="headerlink" href="#alyvix.tools.winmanager.WinManager" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.tools.winmanager.WinManager.check_if_window_exists">
+<code class="descname">check_if_window_exists</code><span class="sig-paren">(</span><em>window_title</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.winmanager.WinManager.check_if_window_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if window(s) exist.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>window_title</strong> (<em>string</em>) &#8211; regular expression for the window(s) title</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.winmanager.WinManager.close_window">
+<code class="descname">close_window</code><span class="sig-paren">(</span><em>window_title</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.winmanager.WinManager.close_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>close window(s).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>window_title</strong> (<em>string</em>) &#8211; regular expression for the window(s) title</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.winmanager.WinManager.maximize_foreground_window">
+<code class="descname">maximize_foreground_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.winmanager.WinManager.maximize_foreground_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>maximize foreground window.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.winmanager.WinManager.maximize_window">
+<code class="descname">maximize_window</code><span class="sig-paren">(</span><em>window_title</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.winmanager.WinManager.maximize_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>maximize window(s).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>window_title</strong> (<em>string</em>) &#8211; regular expression for the window(s) title</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.winmanager.WinManager.show_window">
+<code class="descname">show_window</code><span class="sig-paren">(</span><em>window_title</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.winmanager.WinManager.show_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>show window.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>window_title</strong> (<em>string</em>) &#8211; regular expression for the window title</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-alyvix.tools.procmanager"></span><dl class="class">
+<dt id="alyvix.tools.procmanager.ProcManager">
+<em class="property">class </em><code class="descclassname">alyvix.tools.procmanager.</code><code class="descname">ProcManager</code><a class="headerlink" href="#alyvix.tools.procmanager.ProcManager" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="alyvix.tools.procmanager.ProcManager.create_process">
+<code class="descname">create_process</code><span class="sig-paren">(</span><em>*popenargs</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.procmanager.ProcManager.create_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>create and run new process.
+The arguments are the same as for the Popen constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">subprocess.Popen</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an istance of Popen object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="alyvix.tools.procmanager.ProcManager.kill_process">
+<code class="descname">kill_process</code><span class="sig-paren">(</span><em>process_name</em><span class="sig-paren">)</span><a class="headerlink" href="#alyvix.tools.procmanager.ProcManager.kill_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>kill a process.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>process_name</strong> (<em>string</em>) &#8211; the name of the process to kill</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to Alyvix&#8217;s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">Alyvix 1.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Alan Pipitone (Violet Atom) - <a href="http://www.violetatom.com/">www.violetatom.com</a>.
+    </div>
+
+  </body>
+</html>
